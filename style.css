@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* NAV STYLES */
+nav {
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+  margin: 2.5em 5%;
+  font-size: 1.5em;
+}
+/* NAV STYLES */
+
+/* MAIN STYLES */
+main {
+  margin-top: 10em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-family: "Space Mono", monospace;
+}
+/* SCARECROW IMAGE STYLES */
+main img {
+  height: 25em;
+  margin-left: 5%;
+}
+/* SCARECROW IMAGE STYLES */
+
+/* DESCRIPTION STYLES */
+.container-description {
+  width: 50%;
+  height: 25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.container-description h1 {
+  margin-bottom: 0.625em;
+  width: 10em;
+  font-size: 3em;
+  font-weight: bold;
+}
+.container-description p {
+  width: 16em;
+  font-size: 1.2em;
+  margin-bottom: 0.625em;
+}
+.container-description button {
+  width: 15em;
+  height: 4em;
+  background-color: #333333;
+  color: white;
+  font-family: "Space Mono", monospace;
+  text-transform: uppercase;
+}
+/* DESCRIPTION STYLES */
+/* FOOTER STYLES */
+footer {
+  color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+/* MAIN STYLES */
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  main img {
+    height: 22em;
+  }
+}
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  body {
+    font-size: 12px;
+  }
+}
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  main {
+    flex-direction: column;
+  }
+  .container-description {
+    width: 100%;
+    height: 40em;
+  }
+  .container-description h1 {
+    margin: 0 auto 0.625em auto;
+    width: 8em;
+    font-size: 4.5em;
+  }
+  .container-description p {
+    margin: 0 auto 0.625em auto;
+    font-size: 1.9em;
+    width: 18.5em;
+  }
+  .container-description button {
+    margin-left: 3.5em;
+  }
+}
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  body {
+    font-size: 8px;
+  }
+}
